@@ -10,7 +10,7 @@ const basePort = 'https://127.0.0.1:8081'
 const walletPassword = 'hello'
 
 const CronJob = require('cron').CronJob
-const macaroon = fs.readFileSync('server/api/admin.macaroon').toString('hex')
+const macaroon = fs.readFileSync('api/admin.macaroon').toString('hex')
 
 const checkRefill = async address => {
   try {
