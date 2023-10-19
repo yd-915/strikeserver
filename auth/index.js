@@ -4,8 +4,8 @@ module.exports = router
 
 const MessagingResponse = require('twilio').twiml.MessagingResponse
 const client = require('twilio')(
-  process.env.twilioSid,
-  process.env.twilioAuthToken
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
 )
 
 const twilioPhone = '+18482202516'
